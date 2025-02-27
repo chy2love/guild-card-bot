@@ -1,5 +1,6 @@
 // 1. 주요 클래스 가져오기
 const { Client, Events, GatewayIntentBits } = require('discord.js');
+require('dotenv').config();
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
