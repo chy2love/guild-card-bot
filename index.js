@@ -1,6 +1,5 @@
 // 1. 주요 클래스 가져오기
 const { Client, Events, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
@@ -57,4 +56,4 @@ client.on('messageCreate', async (message) => {
 })
 
 // 5. 시크릿키(토큰)을 통해 봇 로그인 실행
-client.login(token);
+client.login(process.env.TOKEN);
