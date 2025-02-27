@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "guild-card" : "npx puppeteer browsers install chrome && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
